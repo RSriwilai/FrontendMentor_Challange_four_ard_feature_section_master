@@ -18,7 +18,7 @@ body {
 }
 .container .textbox #font300 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
     color: hsl(229, 6%, 66%)
 }
 .container .textbox #fontbold {
@@ -30,7 +30,7 @@ body {
     text-align: center;
     color: hsl(229, 6%, 66%);
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 .container .paragraph-box {
     color: hsl(229, 6%, 66%)
@@ -38,14 +38,74 @@ body {
 .box-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 1140px;
+}
+.supervisorBox {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    transform: translateY(50%);
+
+}
+.teambuilderBox {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.karmaBox {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculatorBox {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    transform: translateY(50%);
+
 }
 .boxes {
     background-color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05), 
     0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
     padding: 30px;
-    margin: 30px;
+    margin: 15px;
     width: 350px;
 }
+.boxes h4 {
+    margin: 0;
+    color: hsl(234, 12%, 34%)
+
+}
+.boxes p {
+    font-size: 14px;
+    margin: 15px 0 30px;
+}
+.boxes img {
+    display: block;
+    margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+    .container, .box-container {
+        width: 90%;
+    }
+    .boxes {
+        height: 230px;
+    }
+    .supervisorBox {
+        position: relative;
+        top: -140px;
+    }
+    .teambuilderBox {
+        position: relative;
+        top: -30px;
+    }
+    .karmaBox {
+        position: relative;
+        top: -295px;
+    }
+    .calculatorBox {
+        position: relative;
+        top: 107px;
+    }
+    #font300, #fontbold {
+        font-size: 24px;
+    }
+
+}
+
